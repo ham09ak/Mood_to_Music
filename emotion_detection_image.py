@@ -1,3 +1,4 @@
+from deepface import DeepFace
 def emotion_detection_image(image_path):
   try:
      emotions=DeepFace.analyze(image_path,actions=['emotion'], enforce_detection=False) # analyze methode detect emotions , age, gender, race
