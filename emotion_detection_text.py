@@ -1,3 +1,6 @@
+import text2emotion as te
+import nltk
+nltk.download('punkt_tab')
 def emotion_detection_text(text):
   emotions=te.get_emotion(text)
   if not emotions:
